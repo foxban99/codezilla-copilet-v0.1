@@ -17,6 +17,7 @@ export function getAnthropicModel(apiKey: string, model: string) {
 
   return anthropic(model);
 }
+
 export function getOpenAILikeModel(baseURL:string,apiKey: string, model: string) {
   const openai = createOpenAI({
     baseURL:
@@ -25,6 +26,7 @@ export function getOpenAILikeModel(baseURL:string,apiKey: string, model: string)
 
   return openai(model);
 }
+
 export function getOpenAIModel(apiKey: string, model: string) {
   const openai = createOpenAI({
     apiKey,
